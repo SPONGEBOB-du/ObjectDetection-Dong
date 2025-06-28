@@ -1,0 +1,37 @@
+# Ultralytics YOLO 🚀, AGPL-3.0 license
+# COCO8 dataset (first 8 images from COCO train2017) by Ultralytics
+# Documentation: https://docs.ultralytics.com/datasets/detect/coco8/
+# Example usage: yolo train data=coco8.yaml
+# parent
+# ├── ultralytics
+# └── datasets
+#     └── coco8  ← downloads here (1 MB)
+
+# Train/val/test sets as 1) dir: path/to/imgs, 2) file: path/to/imgs.txt, or 3) list: [path/to/imgs1, path/to/imgs2, ..]
+# path: C:\Users\ajifang\Desktop\ultralytics-main\ultralytics-main\datasets\sea_ship # dataset root dir
+path: D:\PhD - Pengfei\datasets\datasets # dataset root dir
+train: images/train # train images (relative to 'path') 4 images
+val: images/valid # val images (relative to 'path') 4 images
+test: # test images (optional)
+
+# Classes
+names:
+  # 0: ore carrier
+  # 1: bulk cargo carrier
+  # 2: general cargo ship
+  # 3: container ship
+  # 4: fishing boat
+  # 5: passenger ship
+  0: cargo
+  1: passenger
+  2: cruise
+  3: bulker
+  4: scientfic ship
+  5: sailingboat
+  6: tug
+  7: fishing
+  8: drill
+  9: firefighting
+  10: containership
+  11: warship
+  12: submarine
